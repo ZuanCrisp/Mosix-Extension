@@ -7,7 +7,6 @@
     "metadata_provider",
     "download_provider"
   ],
-  "minAppVersion": "1.0.0",
   "requiredRuntimeFeatures": [
     "signedSession@1",
     "sessionGrant@1",

@@ -3,12 +3,11 @@
   "displayName": "Qobuz",
   "version": "1.2.24",
   "description": "Qobuz metadata and download provider for Mosix with resilient album search and track recovery, complete release metadata, credits, multi-disc totals, and original artwork.",
-  "homepage": "https://github.com/zarzet/Mosix",
+  "homepage": "https://github.com/ZuanCrisp/Mosix-Music-Player",
   "type": [
     "metadata_provider",
     "download_provider"
   ],
-  "minAppVersion": "1.0.0",
   "skipMetadataEnrichment": true,
   "requiredRuntimeFeatures": [
     "signedSession@3",

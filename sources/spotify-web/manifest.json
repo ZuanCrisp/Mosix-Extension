@@ -7,7 +7,6 @@
     "type":  [
                  "metadata_provider"
              ],
-    "minAppVersion":  "1.0.0",
     "skipMetadataEnrichment":  true,
     "capabilities":  {
                          "homeFeed":  true,

@@ -22,11 +22,10 @@
   "capabilities": {
     "homeFeed": true
   },
-  "minAppVersion": "1.0.0",
   "searchBehavior": {
     "enabled": true,
     "primary": false,
-    "placeholder": "멜론뮤직 검색...",
+    "placeholder": "ë©œë¡ ë®¤ì§ ê²€ìƒ‰...",
     "thumbnailRatio": "square"
   },
   "skipMetadataEnrichment": false,

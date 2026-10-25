@@ -9,7 +9,7 @@
       "version": "1.10.3",
       "description": "Spotify metadata provider for Mosix with complete native release, disc, catalog ID, credits, and artwork metadata plus guarded genre enrichment.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/spotify-web.sflx",
-      "sha256": "b806a451ca6b2e3616bf32d405c81067aca89f770f732eae82083104149fecea",
+      "sha256": "595a8a85ef281f5c7913ed46eb622bc317bbc8d2a579b1b968f6a6b58110e7e0",
       "category": "integration",
       "tags": [
         "spotify",
@@ -18,8 +18,7 @@
         "homefeed"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "amazon",
@@ -28,7 +27,7 @@
       "version": "2.3.15",
       "description": "Amazon Music metadata & download provider for Mosix. Includes complete Amazon Web release metadata, original-resolution artwork, lossless audio, and Dolby Atmos.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/amzn.sflx",
-      "sha256": "53109bd17be41d744a97e1ed22b45c41f036ca54de1aba81cfa8236a0bee77b7",
+      "sha256": "d984869be4b3571435f0a9dee0d4a63ebdc1c1949b2b199a3713bc184da57dae",
       "category": "download",
       "tags": [
         "amazon",
@@ -38,8 +37,7 @@
         "search"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "apple-music",
@@ -48,7 +46,7 @@
       "version": "1.4.15",
       "description": "Apple Music metadata and lyrics provider for Mosix with guarded track matching, bounded caching, resilient requests, and complete release metadata.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/apple-music.sflx",
-      "sha256": "42ec95a2871c2b006393e838305de2e24d460b91395941d5898f5df051cea5c8",
+      "sha256": "4f512180fbdf53291598eed85dda832f43fab1c99ba1faba52217df6bc9cbe05",
       "category": "integration",
       "tags": [
         "apple",
@@ -57,8 +55,7 @@
         "search"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "soundcloud",
@@ -67,7 +64,7 @@
       "version": "1.0.12",
       "description": "SoundCloud metadata and download provider. Search tracks, albums, playlists, artists. Downloads via direct SoundCloud streams.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/soundcloud.sflx",
-      "sha256": "8676b87d652f9a45d7fe21ed3bb211e4fb96446e1cfe0cdf5834e49c2a1ed07c",
+      "sha256": "d2cb9e4e1c492071a19648b5ec68bc4289160313c332bdad0c218ee1c32846ae",
       "category": "download",
       "tags": [
         "soundcloud",
@@ -76,8 +73,7 @@
         "search"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "ytmusic-spotiflac",
@@ -86,7 +82,7 @@
       "version": "2.4.5",
       "description": "YouTube Music metadata and download provider with native album, artist, explicit, release, and song-credit metadata plus validated catalog enrichment.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/ytmusic-spotiflac.sflx",
-      "sha256": "ffb6155bc1d108bdc3e7a62ba3142caf3f30334a25c7ec773c15f68c35799662",
+      "sha256": "1217406341c79d8c0b5ad94c5344f7b8d2bec87924bf63720c3620fcbc6de5ed",
       "icon_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/icons/ytmusic-spotiflac.jpg",
       "category": "download",
       "tags": [
@@ -98,8 +94,7 @@
         "download"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "deezer",
@@ -108,7 +103,7 @@
       "version": "1.3.8",
       "description": "Deezer metadata and lossless download provider with complete release, disc, barcode, credits, explicit, genre, rights, link, and high-resolution artwork metadata.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/deezer.sflx",
-      "sha256": "9d28d99fd7c63214b87df039171948b98a2208a57d0a6856190d639dd52c1f27",
+      "sha256": "f4d17f15c33205d7689e3cd9a1172c6b122016deea29795c56c086a55e5a955d",
       "category": "download",
       "tags": [
         "deezer",
@@ -118,8 +113,7 @@
         "search"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "qobuz-web",
@@ -128,7 +122,7 @@
       "version": "1.2.24",
       "description": "Qobuz metadata and download provider for Mosix with resilient album search and track recovery, complete release metadata, credits, multi-disc totals, and original artwork.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/qobuz-web.sflx",
-      "sha256": "128da92279f6ff965d5eeef460fbee442a5a15086dd63544395c10f987bcd511",
+      "sha256": "e4dd527aac96f518eb9c1b3b3ed4f812e970f8251122ff491dc0c7a976387b40",
       "category": "download",
       "tags": [
         "qobuz",
@@ -138,8 +132,7 @@
         "search"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "tidal-web",
@@ -148,7 +141,7 @@
       "version": "1.2.10",
       "description": "TIDAL metadata, search, and download provider for Mosix with complete release, credits, explicit, and disc metadata from TIDAL Web.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/tidal-web.sflx",
-      "sha256": "491a70b6d6689e0c909f412367f68410d4b4fe3726b8c255663a7f3b1125f521",
+      "sha256": "4ac0fce57d629fa37456dbcda5d32e1f9a14884a8aaf0dd0b249724acdb856fa",
       "category": "download",
       "tags": [
         "tidal",
@@ -158,8 +151,7 @@
         "search"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "bugs-music",
@@ -168,7 +160,7 @@
       "version": "2.0.5",
       "description": "Bugs Music metadata provider with accurate track and album details, artist catalogs, TOP100, genre charts, and URL imports.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/bugs-music.sflx",
-      "sha256": "29c66732ef52822a2f32f8bcddaf43316d00344f250e05ee96f5414a08b33a73",
+      "sha256": "661f7c9ef831933dca0b686ad0cb6eef2b9acc91b372523abb7116b2566938c6",
       "category": "integration",
       "tags": [
         "bugs",
@@ -178,8 +170,7 @@
         "homefeed"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "melon-music",
@@ -188,7 +179,7 @@
       "version": "2.0.5",
       "description": "Melon Music metadata provider with song search, album and artist catalogs, DJ playlists, separate TOP100 and HOT100 charts, and URL imports.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/melon-music.sflx",
-      "sha256": "ce6485b883a7cdb8f19a709d51e57e543e8db3660f117a4f391672d9df686b57",
+      "sha256": "85fe4c2e8bb52ae5afc7d098e789cfef3e5d850c380d1716844b60925c1c7228",
       "category": "integration",
       "tags": [
         "melon",
@@ -199,8 +190,7 @@
         "playlist"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "genie-music",
@@ -209,7 +199,7 @@
       "version": "2.0.5",
       "description": "Genie Music metadata provider with track details, albums, paginated artist catalogs, TOP200, genre charts, and URL imports.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/genie-music.sflx",
-      "sha256": "e7d45545732cabb845e067141bc1fbc224e3fe92953a5d230a6253e1f465d43d",
+      "sha256": "415405dd03d1d048c0255a125896ba40344406e39966b00bee442c22e36e4e20",
       "category": "integration",
       "tags": [
         "genie",
@@ -219,8 +209,7 @@
         "homefeed"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     },
     {
       "id": "jiosaavn",
@@ -229,7 +218,7 @@
       "version": "1.0.9",
       "description": "Search and download JioSaavn AAC tracks, with album, playlist, artist metadata and a home feed.",
       "download_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/extensions/jiosaavn.sflx",
-      "sha256": "a22e42611ca73b8ce93192ab7db5bb722b41c805c76c9f31f89f607534ad7593",
+      "sha256": "f4508b97ba008bac74e201bb2aaee78a5587c7c4fae14eeef5bc81e421ea085a",
       "icon_url": "https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/icons/jiosaavn.png",
       "category": "download",
       "tags": [
@@ -240,8 +229,7 @@
         "download"
       ],
       "downloads": 0,
-      "updated_at": "2026-10-25T00:00:00Z",
-      "min_app_version": "1.0.0"
+      "updated_at": "2026-10-25T00:00:00Z"
     }
   ]
 }

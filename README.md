@@ -33,7 +33,7 @@ The tests use Node.js 22 or newer and mock provider responses; they do not
 contact music services. The Python 3 script creates reproducible `.sflx`
 archives and updates their versions and SHA-256 digests in `registry.json`.
 Pass provider directory names to rebuild a subset, for example
-`python3 scripts/build_packages.py amazon tidal-web`. Keep `host_app_version.txt` aligned with Mosix `lib/constants/app_info.dart`; source manifests and registry minimums are checked against it.
+`python3 scripts/build_packages.py amazon tidal-web`. Keep `host_app_version.txt` aligned with Mosix `lib/constants/app_info.dart`. The version records the host release used for compatibility checks; extension manifests and registry entries omit minimum app-version restrictions.
 
 Commit source, tests, packages, and registry changes together. Other providers
 remain package-only until their source is added to this layout.

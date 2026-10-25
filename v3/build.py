@@ -14,7 +14,7 @@ def build():
     manifest = json.loads((source / "manifest.json").read_text())
     manifest.update({
         "name": "qobuz-v3", "displayName": "Qobuz V3 (Testing)",
-        "version": "0.1.0", "minAppVersion": "5.2.1",
+        "version": "0.1.0",
         "requiredRuntimeFeatures": ["apiV3@1", "preparedContext@1"],
         "description": "Testing: host-managed V3 FLAC downloads with Qobuz metadata.",
     })

@@ -3,12 +3,11 @@
   "displayName": "Tidal",
   "version": "1.2.10",
   "description": "TIDAL metadata and search provider for Mosix using TIDAL public web endpoints.",
-  "homepage": "https://github.com/zarzet/Mosix",
+  "homepage": "https://github.com/ZuanCrisp/Mosix-Music-Player",
   "type": [
     "metadata_provider",
     "download_provider"
   ],
-  "minAppVersion": "1.0.0",
   "requiredRuntimeFeatures": [
     "signedSession@3",
     "sessionGrant@1",

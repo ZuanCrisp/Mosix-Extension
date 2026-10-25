@@ -7,7 +7,6 @@
   "homepage": "https://github.com/HemanthJabalpuri/spotiflac-jiosaavn-extension",
   "icon": "icon.png",
   "type": ["metadata_provider", "download_provider"],
-  "minAppVersion": "1.0.0",
   "requiredRuntimeFeatures": ["preparedContext@1"],
   "permissions": {
     "network": ["www.jiosaavn.com", "aac.saavncdn.com"],

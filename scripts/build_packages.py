@@ -56,14 +56,14 @@ def main():
             parser.error(f"Invalid provider directory: {provider}")
         source = ROOT / "sources" / provider
         manifest = json.loads((source / "manifest.json").read_text(encoding="utf-8"))
-        if manifest.get("minAppVersion") != host_app_version:
-            parser.error(f"{provider} minAppVersion must match host_app_version.txt ({host_app_version})")
+        if manifest.get("minAppVersion") not in (None, ""):
+            parser.error(f"{provider} must not impose a minimum Mosix app version")
         matches = [entry for entry in registry["extensions"] if entry["id"] == manifest["name"]]
         if len(matches) != 1:
             parser.error(f"Expected one registry entry for {manifest['name']}")
         entry = matches[0]
-        if entry.get("min_app_version") != host_app_version:
-            parser.error(f"Registry min_app_version for {provider} must match host_app_version.txt ({host_app_version})")
+        if entry.get("min_app_version") not in (None, ""):
+            parser.error(f"Registry entry for {provider} must not impose a minimum Mosix app version")
         filename = Path(urlparse(entry["download_url"]).path).name
         if not filename.endswith(".sflx"):
             parser.error(f"Expected .sflx download URL for {provider}")

@@ -15,14 +15,13 @@
   "type": [
     "metadata_provider"
   ],
-  "minAppVersion": "1.0.0",
   "capabilities": {
     "homeFeed": true
   },
   "searchBehavior": {
     "enabled": true,
     "primary": false,
-    "placeholder": "벅스뮤직 검색...",
+    "placeholder": "ë²…ìŠ¤ë®¤ì§ ê²€ìƒ‰...",
     "thumbnailRatio": "square"
   },
   "urlHandler": {
