@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def package(source):
-    manifest = json.loads((source / "manifest.json").read_text())
+    manifest = json.loads((source / "manifest.json").read_text(encoding="utf-8"))
     filenames = ["manifest.json", "index.js"]
     licenses = ["LICENSE", "COPYING", "NOTICE"]
     icon = manifest.get("icon")
@@ -44,7 +44,8 @@ def main():
     args = parser.parse_args()
     providers = args.providers or sorted(path.name for path in (ROOT / "sources").iterdir() if path.is_dir())
     registry_path = ROOT / "registry.json"
-    registry = json.loads(registry_path.read_text())
+    registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    host_app_version = (ROOT / "host_app_version.txt").read_text().strip()
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT00:00:00Z")
     changed = False
     stale = []
@@ -54,11 +55,15 @@ def main():
         if Path(provider).name != provider or provider in (".", ".."):
             parser.error(f"Invalid provider directory: {provider}")
         source = ROOT / "sources" / provider
-        manifest = json.loads((source / "manifest.json").read_text())
+        manifest = json.loads((source / "manifest.json").read_text(encoding="utf-8"))
+        if manifest.get("minAppVersion") != host_app_version:
+            parser.error(f"{provider} minAppVersion must match host_app_version.txt ({host_app_version})")
         matches = [entry for entry in registry["extensions"] if entry["id"] == manifest["name"]]
         if len(matches) != 1:
             parser.error(f"Expected one registry entry for {manifest['name']}")
         entry = matches[0]
+        if entry.get("min_app_version") != host_app_version:
+            parser.error(f"Registry min_app_version for {provider} must match host_app_version.txt ({host_app_version})")
         filename = Path(urlparse(entry["download_url"]).path).name
         if not filename.endswith(".sflx"):
             parser.error(f"Expected .sflx download URL for {provider}")
@@ -81,7 +86,7 @@ def main():
         parser.exit(1, "Stale packages or registry entries: " + ", ".join(stale) + "\n")
     if changed:
         registry["updated_at"] = timestamp
-        registry_path.write_text(json.dumps(registry, indent=2, ensure_ascii=False) + "\n")
+        registry_path.write_text(json.dumps(registry, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

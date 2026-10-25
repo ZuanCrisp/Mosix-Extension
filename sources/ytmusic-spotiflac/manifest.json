@@ -1,11 +1,11 @@
 {
   "name": "ytmusic-spotiflac",
   "displayName": "YouTube Music",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "description": "YouTube Music metadata and download provider with native album, artist, explicit, release, and song-credit metadata plus validated catalog enrichment.",
   "type": ["metadata_provider", "download_provider"],
   "icon": "icon.jpg",
-  "minAppVersion": "4.5.1",
+  "minAppVersion": "1.0.0",
   "permissions": {
     "network": [
       "music.youtube.com",

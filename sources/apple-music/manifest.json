@@ -1,14 +1,14 @@
 {
   "name": "apple-music",
   "displayName": "Apple Music",
-  "version": "1.4.14",
+  "version": "1.4.15",
   "description": "Apple Music metadata and lyrics provider for Mosix with guarded track matching, bounded caching, resilient requests, and complete release metadata.",
   "homepage": "https://github.com/zarzet/Mosix",
   "type": [
     "metadata_provider",
     "lyrics_provider"
   ],
-  "minAppVersion": "4.2.3",
+  "minAppVersion": "1.0.0",
   "skipMetadataEnrichment": false,
   "capabilities": {
     "homeFeed": true,

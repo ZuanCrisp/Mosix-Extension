@@ -6,7 +6,7 @@
 2. Add your `.sflx` package to the `extensions/` folder
 3. Add your icon image (PNG/JPG, 512x512 recommended) to `icons/` folder
 4. Add entry to `registry.json`
-   - Ensure `icon_url` points to the raw file in the repository (e.g. `https://raw.githubusercontent.com/ZuanCrisp/ZuanCrisp-Mosix-Extension/main/icons/your-icon.png`)
+   - Ensure `icon_url` points to the raw file in the repository (e.g. `https://raw.githubusercontent.com/ZuanCrisp/Mosix-Extension/main/icons/your-icon.png`)
 5. Create Pull Request
 
 ## Requirements
@@ -33,7 +33,7 @@ The tests use Node.js 22 or newer and mock provider responses; they do not
 contact music services. The Python 3 script creates reproducible `.sflx`
 archives and updates their versions and SHA-256 digests in `registry.json`.
 Pass provider directory names to rebuild a subset, for example
-`python3 scripts/build_packages.py amazon tidal-web`.
+`python3 scripts/build_packages.py amazon tidal-web`. Keep `host_app_version.txt` aligned with Mosix `lib/constants/app_info.dart`; source manifests and registry minimums are checked against it.
 
 Commit source, tests, packages, and registry changes together. Other providers
 remain package-only until their source is added to this layout.

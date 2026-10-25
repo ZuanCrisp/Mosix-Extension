@@ -1,13 +1,13 @@
 {
   "name": "jiosaavn",
   "displayName": "JioSaavn",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Search and download JioSaavn AAC tracks, browse albums, playlists, artists, and the home feed.",
   "author": "HemanthJabalpuri; Mosix compatibility fixes",
   "homepage": "https://github.com/HemanthJabalpuri/spotiflac-jiosaavn-extension",
   "icon": "icon.png",
   "type": ["metadata_provider", "download_provider"],
-  "minAppVersion": "4.9.5",
+  "minAppVersion": "1.0.0",
   "requiredRuntimeFeatures": ["preparedContext@1"],
   "permissions": {
     "network": ["www.jiosaavn.com", "aac.saavncdn.com"],

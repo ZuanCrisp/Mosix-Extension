@@ -1,7 +1,7 @@
 {
   "name": "melon-music",
   "displayName": "Melon Music",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Melon Music metadata provider with charts, album and artist catalogs, DJ playlists, and URL imports",
   "author": "custom",
   "homepage": "https://github.com/ldw0403-netizen/K-Music",
@@ -22,7 +22,7 @@
   "capabilities": {
     "homeFeed": true
   },
-  "minAppVersion": "3.0.1",
+  "minAppVersion": "1.0.0",
   "searchBehavior": {
     "enabled": true,
     "primary": false,
