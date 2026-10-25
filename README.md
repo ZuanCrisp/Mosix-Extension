@@ -57,7 +57,7 @@ All submissions are reviewed before being added to the store.
 
 ## License
 
-Copyright 2026 zarzet
+Copyright 2026
 
 This project is licensed under the [GNU Lesser General Public License v3.0 only (LGPL-3.0-only)](LICENSE), together with the incorporated [GNU GPL v3.0 terms](COPYING).
 
