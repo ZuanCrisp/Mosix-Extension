@@ -1,0 +1,40 @@
+{
+  "name": "genie-music",
+  "displayName": "Genie Music",
+  "version": "2.0.4",
+  "description": "Genie Music track and album metadata, paginated artist catalogs, charts, and URL imports",
+  "author": "custom",
+  "homepage": "https://github.com/ldw0403-netizen/K-Music",
+  "permissions": {
+    "network": [
+      "www.genie.co.kr",
+      "genie.co.kr"
+    ],
+    "storage": false,
+    "file": false
+  },
+  "type": [
+    "metadata_provider"
+  ],
+  "icon": "icon.png",
+  "capabilities": {
+    "homeFeed": true
+  },
+  "minAppVersion": "3.0.1",
+  "searchBehavior": {
+    "enabled": true,
+    "primary": false,
+    "placeholder": "지니뮤직 검색...",
+    "thumbnailRatio": "square"
+  },
+  "urlHandler": {
+    "enabled": true,
+    "patterns": [
+      "genie.co.kr/detail/songInfo",
+      "genie.co.kr/detail/albumInfo",
+      "genie.co.kr/detail/artistInfo"
+    ]
+  },
+  "skipMetadataEnrichment": false,
+  "skipBuiltInFallback": false
+}

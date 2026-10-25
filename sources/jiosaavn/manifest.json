@@ -1,0 +1,43 @@
+{
+  "name": "jiosaavn",
+  "displayName": "JioSaavn",
+  "version": "1.0.8",
+  "description": "Search and download JioSaavn AAC tracks, browse albums, playlists, artists, and the home feed.",
+  "author": "HemanthJabalpuri; Mosix compatibility fixes",
+  "homepage": "https://github.com/HemanthJabalpuri/spotiflac-jiosaavn-extension",
+  "icon": "icon.png",
+  "type": ["metadata_provider", "download_provider"],
+  "minAppVersion": "4.9.5",
+  "requiredRuntimeFeatures": ["preparedContext@1"],
+  "permissions": {
+    "network": ["www.jiosaavn.com", "aac.saavncdn.com"],
+    "storage": true,
+    "file": true
+  },
+  "qualityOptions": [
+    {"id": "AAC_320", "kind": "lossy", "label": "AAC 320 kbps", "description": "Highest quality JioSaavn offers"},
+    {"id": "AAC_160", "kind": "lossy", "label": "AAC 160 kbps", "description": "Good quality, smaller files"},
+    {"id": "AAC_96", "kind": "lossy", "label": "AAC 96 kbps", "description": "Data saver"},
+    {"id": "AAC_48", "kind": "lossy", "label": "AAC 48 kbps", "description": "Low quality"},
+    {"id": "AAC_12", "kind": "lossy", "label": "AAC 12 kbps", "description": "Lowest bitrate"}
+  ],
+  "capabilities": {"homeFeed": true, "downloadFallbackTier": "low_res"},
+  "searchBehavior": {
+    "enabled": true,
+    "placeholder": "Search JioSaavn...",
+    "filters": [
+      {"id": "tracks", "label": "Songs", "icon": "music"},
+      {"id": "albums", "label": "Albums", "icon": "album"},
+      {"id": "playlists", "label": "Playlists", "icon": "playlist"},
+      {"id": "artists", "label": "Artists", "icon": "artist"}
+    ]
+  },
+  "urlHandler": {
+    "enabled": true,
+    "patterns": ["jiosaavn.com/song/", "jiosaavn.com/album/", "jiosaavn.com/artist/", "jiosaavn.com/playlist/", "jiosaavn.com/s/playlist/", "jiosaavn.com/featured/"]
+  },
+  "settings": [
+    {"key": "lang", "label": "Languages", "type": "string", "default": "english", "description": "Comma-separated languages"},
+    {"key": "clear_cache", "label": "Clear Cache", "type": "button", "description": "Remove all cached data", "action": "forceCleanup"}
+  ]
+}

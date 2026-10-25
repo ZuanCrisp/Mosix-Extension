@@ -1,0 +1,41 @@
+{
+  "name": "bugs-music",
+  "displayName": "Bugs Music",
+  "version": "2.0.4",
+  "description": "Bugs Music search, track and album metadata, artist catalogs, charts, genre charts, and URL imports",
+  "author": "ldw0403-netizen",
+  "homepage": "https://github.com/ldw0403-netizen/K-Music",
+  "icon": "icon.png",
+  "permissions": {
+    "network": [
+      "music.bugs.co.kr",
+      "image.bugsm.co.kr"
+    ]
+  },
+  "type": [
+    "metadata_provider"
+  ],
+  "minAppVersion": "3.0.1",
+  "capabilities": {
+    "homeFeed": true
+  },
+  "searchBehavior": {
+    "enabled": true,
+    "primary": false,
+    "placeholder": "벅스뮤직 검색...",
+    "thumbnailRatio": "square"
+  },
+  "urlHandler": {
+    "enabled": true,
+    "patterns": [
+      "https://music.bugs.co.kr/track/",
+      "https://music.bugs.co.kr/album/",
+      "https://music.bugs.co.kr/artist/",
+      "https://m.bugs.co.kr/track/",
+      "https://m.bugs.co.kr/album/",
+      "https://m.bugs.co.kr/artist/"
+    ]
+  },
+  "skipMetadataEnrichment": false,
+  "skipBuiltInFallback": false
+}

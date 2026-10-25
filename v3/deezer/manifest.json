@@ -1,0 +1,12 @@
+{
+  "name": "deezer-v3",
+  "displayName": "Deezer V3 (Testing)",
+  "version": "0.1.0",
+  "description": "Testing: host-managed V3 FLAC downloads with verified Deezer track matching.",
+  "type": ["download_provider"],
+  "minAppVersion": "5.2.1",
+  "requiredRuntimeFeatures": ["apiV3@1"],
+  "permissions": {"network": ["api.deezer.com", "api.zarz.moe"], "storage": false, "file": false},
+  "capabilities": {"apiV3Providers": ["deezer"], "downloadFallbackTier": "lossless"},
+  "qualityOptions": [{"id":"LOSSLESS","label":"Lossless","kind":"lossless","description":"FLAC"}]
+}
